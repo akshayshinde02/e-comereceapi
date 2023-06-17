@@ -14,7 +14,7 @@ function App() {
    <BrowserRouter>
    <Routes>
     <Route exact path="/" element={<Product/>}/>
-    <Route path="/nevigation" element={<CardPage/>}/>
+    {/* <Route path="/nevigation" element={<CardPage/>}/> */}
    </Routes>
    </BrowserRouter>
    </>

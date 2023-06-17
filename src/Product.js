@@ -28,16 +28,18 @@ const Product = () => {
          callapi();
       })
 
-      const callapi1 = (e)=>{
-         navigate('/nevigation', { state: { res} });
-      }
+      // const callapi1 = (e)=>{
+      //    navigate('/nevigation', { state: { res} });
+      // }
+
+      
 
   return (
     <>
 
 
     <div className="container">
-    <form onSubmit={callapi1} >
+    <form >
         <div className="row">
            <div className="card">
         <h2>{`Brand Name is : ${res.title}`}</h2>
@@ -48,7 +50,25 @@ const Product = () => {
            
         </div><br /><br />
 </form>
+
+
+<h1 className='cardlist'>Card List</h1>
+         <div className="container">
+             <div className="row2">
+                <div className="card">
+         <p>{res.title}</p>
+         <h2>{`Brand Name is : ${res.title}`}</h2>
+        <p>{`Description : ${res.description}`}</p>
+        <h3>{`Price : ${res.price} $`}</h3>
+         </div>
+         </div>
+         </div>
     </div>
+
+    
+    {/* <h1 className='cardlist'>Card List</h1> */}
+
+
 
     <CardPage res={res}/>
     </>
